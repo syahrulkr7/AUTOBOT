@@ -2,7 +2,7 @@ module.exports.config = {
     name: "goiadminn",
     version: "1.0.0",
     role: 0,
-    credits: "John Arida",
+    credits: "arul",
     description: "Bot will rep ng tag admin or rep ng tagbot ",
     usages: "",
     hasPrefix: true,
@@ -12,7 +12,7 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event }) {
     const mentionedNames = Object.values(event.mentions).map(user => user.toLowerCase());
     
-    if (mentionedNames.includes("joshua apostol")) {
+    if (mentionedNames.includes("arul")) {
         var msg = [
             "Babe nalang iatawag mo sakanya",
             "Stop mentioning my creator, he's busy 😗",
