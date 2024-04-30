@@ -4,7 +4,7 @@ module.exports.config = {
  name: "miko",
  version: "1.0.0",
  role: 0,
- aliases: ["joshua Apostol"],
+ aliases: ["arul"],
  credits: "cliff",
 cooldown: 0,
 hasPrefix: false,
@@ -18,7 +18,7 @@ module.exports.run = async function ({ api, event, args }) {
 	return api.sendMessage("🟢 Please  Provide your question first", event.threadID, event.messageID);
  }
 
- api.sendMessage("🟡 JOSH BOT is typing  Please wait a seconds...", event.threadID, event.messageID); 
+ api.sendMessage("🟡 𝕒𝕣𝕦𝕟𝕒 is typing  Please wait a seconds...", event.threadID, event.messageID); 
 
  const apiUrl = `https://bluerepoapislasttry.onrender.com/hercai?content=${content}`;
 
