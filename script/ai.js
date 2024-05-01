@@ -16,10 +16,10 @@ module.exports.config = {
 module.exports.run = async function ({ api, event, args }) {
     const question = args.join(' ');
     
-    if (!question) return api.sendMessage("Please provide a question first.", event.threadID, event.messageID);
+    if (!question) return api.sendMessage("Hai, senang bertemu denganmu! Aku Aruna, temanmu yang ramah, dan siap membantu. Kamu bisa bertanya padaku tentang jawaban, rekomendasi, saran, atau apapun yang ada di pikiranmu:)", event.threadID, event.messageID);
 
     try {
-        api.sendMessage("Please bear with me while I ponder your request...", event.threadID, event.messageID);
+        api.sendMessage("Mohon tunggu sebentar sayang😁😁...", event.threadID, event.messageID);
 
         const userInput = encodeURIComponent(question);
         const uid = event.senderID;
