@@ -40,9 +40,9 @@ module.exports.run = async function ({ api, event, args }) {
         const timeString = moment.tz('Asia/Manila').format('LLLL');
 
         api.sendMessage({
-            body: `★𝔸ℝ𝕌𝕃 𝔻𝔼𝕍★\n━━━━━━━━━━━━━━━━━━━\n𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${question}\n━━━━━━━━━━━━━━━━━━━\n𝗔𝗻𝘀𝘄𝗲𝗿: ${answer}\n\nThis bot was created by arul\n
+            body: `★𝔸ℝ𝕌𝕃 𝔻𝔼𝕍★\n━━━━━━━━━━━━━━━━━━━\n𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${question}\n━━━━━━━━━━━━━━━━━━━\n𝗔𝗻𝘀𝘄𝗲𝗿: ${answer}\n\nBot ini dibuat oleh arul\n
 𝗣⃪𝗼⃪𝗴⃪𝗶⃪:
-${timeString}\n\nFOLLOW THE DEVELOPER:https://www.facebook.com/profile.php?id=100089127638756.`
+${timeString}\n\n IKUTI PENGEMBANG:https://www.facebook.com/profile.php?id=100089127638756.`
         }, event.threadID, (error, info) => {
             if (error) {
                 console.error(error);
