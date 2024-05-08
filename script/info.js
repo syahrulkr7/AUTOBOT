@@ -85,8 +85,8 @@ module.exports.run = async function({ api, event, args }) {
 				api.sendMessage({
 						body: `➢ Admin and Bot Information
 
-⁂ Bot Name: ${𝕒𝕣𝕦𝕟𝕒}
-✧ Bot Admin: ${ARUL}
+⁂ Bot Name: ${𝔸ℝ𝕌𝕃 𝔹𝕆𝕋}
+✧ Bot Admin: ${𝔸ℝ𝕌𝕃 𝔻𝔼𝕍}
 ♛ Bot Admin Link: ${https://www.facebook.com/profile.php?id=100089127638756}
 ❂ Bot Prefix: ${prefix}
 ➟ UPTIME ${uptimeString}
