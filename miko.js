@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 module.exports.config = {
- name: "miko",
+ name: "arul",
  version: "1.0.0",
  role: 0,
  aliases: ["arul"],
@@ -15,10 +15,10 @@ module.exports.run = async function ({ api, event, args }) {
  const content = encodeURIComponent(args.join(" "));
 
  if (!content) {
-	return api.sendMessage("🟢 Please  Provide your question first", event.threadID, event.messageID);
+	return api.sendMessage("🟢 Silakan Berikan pertanyaan Anda terlebih dahulu", event.threadID, event.messageID);
  }
 
- api.sendMessage("🟡 𝕒𝕣𝕦𝕟𝕒 is typing  Please wait a seconds...", event.threadID, event.messageID); 
+ api.sendMessage("🟡  𝔸ℝ𝕌𝕃 𝔹𝕆𝕋 sedang mengetik Harap tunggu sebentar...", event.threadID, event.messageID); 
 
  const apiUrl = `https://bluerepoapislasttry.onrender.com/hercai?content=${content}`;
 
