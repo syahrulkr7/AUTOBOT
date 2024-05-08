@@ -16,7 +16,16 @@ module.exports.config = {
 module.exports.run = async function ({ api, event, args }) {
     const question = args.join(' ');
     
-    if (!question) return api.sendMessage("Hai, senang bertemu denganmu! Aku Aruna, temanmu yang ramah, dan siap membantu. Kamu bisa bertanya padaku tentang jawaban, rekomendasi, saran, atau apapun yang ada di pikiranmu:)", event.threadID, event.messageID);
+    if (!question) return api.sendMessage("⋱ ⋮ ⋰
+⋯ ◯ ⋯ ︵ 　　　　　　^v^
+¸︵︵( ░░ )︵.︵.︵
+(´░░░░░░ ') ░░░' )
+`´︶´¯`︶´`︶´︶´`　^v^　　^v^
+╔┓┏╦━━╦┓╔┓╔━━╗╔╗
+║┗┛║┗━╣┃║┃║╯╰║║║
+║┏┓║┏━╣┗╣┗╣╰╯║╠╣
+╚┛┗╩━━╩━╩━╩━━╝╚╝
+♪♫•*¨*•.¸¸❤¸¸.•*¨*•♫♪", event.threadID, event.messageID);
 
     try {
         api.sendMessage("Mohon tunggu sebentar sayang😁😁...", event.threadID, event.messageID);
@@ -31,9 +40,9 @@ module.exports.run = async function ({ api, event, args }) {
         const timeString = moment.tz('Asia/Manila').format('LLLL');
 
         api.sendMessage({
-            body: `🖤 𝕒𝕣𝕦𝕟𝕒 🖤\n━━━━━━━━━━━━━━━━━━━\n𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${question}\n━━━━━━━━━━━━━━━━━━━\n𝗔𝗻𝘀𝘄𝗲𝗿: ${answer}\n\nThis bot was created by arul\n
+            body: `★𝔸ℝ𝕌𝕃 𝔻𝔼𝕍★\n━━━━━━━━━━━━━━━━━━━\n𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${question}\n━━━━━━━━━━━━━━━━━━━\n𝗔𝗻𝘀𝘄𝗲𝗿: ${answer}\n\nThis bot was created by arul\n
 𝗣⃪𝗼⃪𝗴⃪𝗶⃪:
-${timeString}\n\nFOLLOW THE DEVELOPER: https://www.facebook.com/profile.php?id=100089127638756.`
+${timeString}\n\nFOLLOW THE DEVELOPER:https://www.facebook.com/profile.php?id=100089127638756.`
         }, event.threadID, (error, info) => {
             if (error) {
                 console.error(error);
