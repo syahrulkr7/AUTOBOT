@@ -2,7 +2,7 @@ module.exports.config = {
     name: "pinterest",
     version: "1.0.0",
     role: 0,
-    credits: "Joshua Sy",
+    credits: " 𝔸ℝ𝕌𝕃 𝔻𝔼𝕍",
     description: "Image search",
     hasPrefix: false,
     commandCategory: "Search",
